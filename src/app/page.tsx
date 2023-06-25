@@ -1,7 +1,11 @@
+// Landing Page
+
+import HeroSection from "./components/home/HeroSection";
+
 export default function Home() {
   return (
     <>
-      <h1>Hi from Netherite.</h1>
+      <HeroSection />
     </>
   );
 }

@@ -1,4 +1,7 @@
 import "./globals.css";
+import "./css/general-sans.css";
+// Components
+import Navbar from "@/app/components/home/Navbar";
 
 export const metadata = {
   title: "Nethrite",
@@ -12,7 +15,12 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className="">{children}</body>
+      <body className="">
+        <main className="w-[90%] mx-auto">
+          <Navbar />
+          {children}
+        </main>
+      </body>
     </html>
   );
 }
