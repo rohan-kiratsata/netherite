@@ -1,7 +1,15 @@
 import "./globals.css";
 import "./css/general-sans.css";
+import { Inter } from "next/font/google";
+
 // Components
 import Navbar from "@/app/components/home/Navbar";
+
+// Google Font
+const inter = Inter({
+  subsets: ["latin"],
+  display: "swap",
+});
 
 export const metadata = {
   title: "Nethrite",
@@ -15,7 +23,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className="bg-primary-black">
+      <body className={`bg-primary-black ${inter.className}`}>
         <main className="">{children}</main>
       </body>
     </html>
