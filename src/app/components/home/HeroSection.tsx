@@ -1,4 +1,7 @@
+"use client";
+
 import React from "react";
+import { css } from "@emotion/react";
 import PrimaryButton from "../uiComponetns/PrimaryButton";
 
 type Props = {};
@@ -6,14 +9,23 @@ type Props = {};
 export default function HeroSection({}: Props) {
   return (
     <section className="md:h-[80vh] flex flex-col items-center justify-center text-center">
-      <h1 className="text-7xl font-medium">
-        Connect Everything. <br /> Organize Nothing.
-      </h1>
-      <div className="text-zinc-600 text-2xl font-medium my-3 w-[500px]">
-        Netherite is visual bookmarking plus note taking app without need of
-        traditional folders
+      {/* <PrimaryButton size="text-2xl" /> */}
+      <div className="">
+        <h1 className="text-9xl font-semibold text-white">
+          visual bookmarking just like your{" "}
+          <span className="text-gradient">brain</span>
+        </h1>
+        <style jsx>
+          {`
+            .text-gradient {
+              background: #818cf8;
+              background: linear-gradient(to right, #818cf8 0%, #fb7185 100%);
+              -webkit-background-clip: text;
+              -webkit-text-fill-color: transparent;
+            }
+          `}
+        </style>
       </div>
-      <PrimaryButton size="text-2xl" />
     </section>
   );
 }

@@ -4,7 +4,7 @@ import Link from "next/link";
 
 export default function Navbar() {
   return (
-    <header className="py-8 flex justify-between w-full">
+    <header className="py-8 flex justify-between w-full text-white">
       {/* Logo */}
       <div>
         <h1 className="text-2xl font-medium">Netherite</h1>
@@ -13,13 +13,13 @@ export default function Navbar() {
         <ul className="text-lg font-medium flex gap-5">
           {/* Navbar Links  */}
           <Link href="/">
-            <li>How to? 🤔</li>
+            <li>How to?</li>
           </Link>
           <Link href="/">
-            <li>Craftsman 👩‍💻</li>
+            <li>Craftsman</li>
           </Link>
           <Link href="/">
-            <li>Show love 💙</li>
+            <li>Show love</li>
           </Link>
           {/* Signup/login CTA */}
           <div>

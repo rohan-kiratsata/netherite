@@ -6,6 +6,9 @@ module.exports = {
       fontFamily: {
         generalSans: ["General Sans", "sans-serif"],
       },
+      colors: {
+        "primary-black": "#101010",
+      },
     },
   },
   plugins: [],
