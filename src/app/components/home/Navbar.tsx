@@ -1,10 +1,10 @@
 import React from "react";
-import PrimaryButton from "../uiComponetns/PrimaryButton";
+import PrimaryButton from "../uiComponents/PrimaryButton";
 import Link from "next/link";
 
 export default function Navbar() {
   return (
-    <header className="py-8 flex justify-between w-full text-white">
+    <header className="py-8 flex justify-between w-full text-primary-black">
       {/* Logo */}
       <div>
         <h1 className="text-2xl font-medium">Netherite</h1>
