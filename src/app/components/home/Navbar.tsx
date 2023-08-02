@@ -4,29 +4,43 @@ import Link from "next/link";
 
 export default function Navbar() {
   return (
-    <header className="py-8 flex justify-between w-full text-primary-black">
+    <header className="py-4 rounded-xl my-5 border border-[#E0E0E0] px-5 flex w-[70%] mx-auto justify-between text-primary-black bg-[#F9F9F9] items-center">
       {/* Logo */}
       <div>
         <h1 className="text-2xl font-medium">Netherite</h1>
       </div>
       <nav>
-        <ul className="text-lg font-medium flex gap-5">
+        <ul className="text-base text-neutral-500  items-center justify-center flex gap-5">
           {/* Navbar Links  */}
-          <Link href="/">
+          <Link
+            href="/"
+            className="hover:text-primary-black transition-colors ease-in-out"
+          >
             <li>How to?</li>
           </Link>
-          <Link href="/">
+          <Link
+            href="/"
+            className="hover:text-primary-black transition-colors ease-in-out"
+          >
             <li>Craftsman</li>
           </Link>
-          <Link href="/">
+          <Link
+            href="/"
+            className="hover:text-primary-black transition-colors ease-in-out"
+          >
             <li>Show love</li>
           </Link>
-          {/* Signup/login CTA */}
-          <div>
-            <PrimaryButton size={"text-lg"} />
-          </div>
         </ul>
       </nav>
+      {/* Signup/login CTA */}
+      <div className="flex gap-4 items-center">
+        <PrimaryButton variant="outline" size={"text-lg"}>
+          Login
+        </PrimaryButton>
+        <PrimaryButton variant="primary" size={"text-lg"}>
+          Signup
+        </PrimaryButton>
+      </div>
     </header>
   );
 }
