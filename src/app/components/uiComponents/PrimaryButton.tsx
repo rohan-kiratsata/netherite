@@ -27,7 +27,7 @@ export default function PrimaryButton({ size, variant, children }: Props) {
   // Styling
   const primaryBtnStyle = `text-white py-2 px-3 from-primary-black to-neutral-700 bg-gradient-to-b rounded-md ${fontSize}`;
 
-  const outlineBtnStyle = `text-primary-black py-2 px-3 from-primary-white to-gray-200 bg-gradient-to-b rounded-md border-[0.5px] border-[#CECECE]`;
+  const outlineBtnStyle = `text-primary-black py-2 px-3 from-primary-white to-gray-100 bg-gradient-to-b rounded-md border-[1px] border-[#CECECE] ${fontSize}`;
 
   return (
     <>

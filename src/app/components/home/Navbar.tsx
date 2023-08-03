@@ -34,11 +34,11 @@ export default function Navbar() {
       </nav>
       {/* Signup/login CTA */}
       <div className="flex gap-4 items-center">
-        <PrimaryButton variant="outline" size={"text-lg"}>
+        {/* <PrimaryButton variant="outline" size={"text-base"}>
           Login
-        </PrimaryButton>
-        <PrimaryButton variant="primary" size={"text-lg"}>
-          Signup
+        </PrimaryButton> */}
+        <PrimaryButton variant="primary" size={"text-base"}>
+          Join waitlist
         </PrimaryButton>
       </div>
     </header>
