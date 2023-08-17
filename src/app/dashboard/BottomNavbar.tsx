@@ -26,12 +26,15 @@ let navItems: { id: number; name: String; icon: JSX.Element; route: String }[] =
 
 export default function BottomNavbar() {
   return (
-    <div className="border border-neutral-800 flex gap-5 px-6 py-2 rounded-full bg-gradient-to-b from-neutral-800 to-transparent to-80%  w-fit fixed left-1/2 -translate-x-1/2 bottom-5 h-fit">
+    <div className="border border-slate-300 flex gap-10 px-6 py-2 rounded-full bg-gradient-to-b from-gray-300 to-transparent to-80%  w-fit fixed left-1/2 -translate-x-1/2 bottom-5 h-fit">
       {navItems.map((navItem) => {
         return (
-          <div key={navItem.id} className="flex flex-col items-center">
+          <div
+            key={navItem.id}
+            className="flex flex-col items-center text-neutral-800"
+          >
             <div className="text-3xl">{navItem.icon}</div>
-            <p className="text-sm font-light">{navItem.name}</p>
+            <p className="text-sm font-normal">{navItem.name}</p>
           </div>
         );
       })}

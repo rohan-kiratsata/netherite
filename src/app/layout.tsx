@@ -1,9 +1,6 @@
 import "./globals.css";
-import "./css/general-sans.css";
-import { Inter } from "next/font/google";
 
-// Components
-import Navbar from "@/app/components/home/Navbar";
+import { Inter } from "next/font/google";
 
 // Google Font
 const inter = Inter({

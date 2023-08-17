@@ -8,14 +8,14 @@ type Props = {};
 
 export default function HeroSection({}: Props) {
   return (
-    <section className="md:h-[80vh] flex flex-col items-center justify-center text-center">
+    <section className="md:h-[90vh] flex flex-col items-center justify-center text-center">
       {/* <PrimaryButton size="text-2xl" /> */}
       <div className="flex items-center justify-center flex-col">
         {/*  */}
         <div className="bg-neutral-100  p-2 rounded-lg text-neutral-500 border border-nuetral-500">
           <span>Pre-alpha stage! Join the waitlist</span>
         </div>
-        <h1 className="text-8xl mt-10 font-semibold text-primary-black">
+        <h1 className="text-8xl mt-10 font-medium text-primary-black">
           visual bookmarking <br /> just like your{" "}
           <span className="text-neutral-400">brain</span>
         </h1>
