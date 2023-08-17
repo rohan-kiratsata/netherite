@@ -1,7 +1,6 @@
 "use client";
 
 import React from "react";
-import { css } from "@emotion/react";
 import PrimaryButton from "../uiComponents/PrimaryButton";
 
 type Props = {};
