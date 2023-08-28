@@ -8,7 +8,7 @@ import Navbar from "./components/home/Navbar";
 export default function Home() {
   return (
     <>
-      <div className="w-[90%] mx-auto ">
+      <div className="w-[90%] mx-auto">
         <Navbar />
         <HeroSection />
         <HowToSection />

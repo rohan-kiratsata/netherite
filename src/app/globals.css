@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 body {
-  @apply bg-primary-white hide-scrollbar;
+  @apply bg-background hide-scrollbar;
 }
 .hide-scrollbar::-webkit-scrollbar {
   display: none;
@@ -12,4 +12,10 @@ body {
 .hide-scrollbar {
   -ms-overflow-style: none; /* IE and Edge */
   scrollbar-width: none; /* Firefox */
+}
+
+/* Input Styling */
+
+.input-field {
+  @apply outline-none bg-neutral-100 p-2 rounded-md border border-neutral-300 placeholder-neutral-300 active:border-neutral-500 focus:border-neutral-500;
 }

@@ -1,6 +1,7 @@
 import "./globals.css";
 
 import { Inter } from "next/font/google";
+import { Providers } from "@/app/providers";
 
 // Google Font
 const inter = Inter({
@@ -20,8 +21,10 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={`bg-primary-white ${inter.className}`}>
-        <main className="">{children}</main>
+      <body className={`text-foreground bg-background ${inter.className}`}>
+        <main className="">
+          <Providers>{children}</Providers>
+        </main>
       </body>
     </html>
   );
