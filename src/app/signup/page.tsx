@@ -8,7 +8,7 @@ import { PiX, PiGoogleLogo, PiEye, PiEyeSlash } from "react-icons/pi";
 
 type Props = {};
 
-export default function page({}: Props) {
+export default function SignUpPage({}: Props) {
   // password input visiblity
   const [isVisible, setIsVisible] = React.useState(false);
   const toggleVisibility = () => setIsVisible(!isVisible);
