@@ -55,7 +55,7 @@ export default function page({}: Props) {
             variant="faded"
           />
           <Input
-            // onChange={(e) => (e.target.textContent = password)}
+            defaultValue={password}
             label="Password"
             className="w-[300px]"
             variant="faded"
