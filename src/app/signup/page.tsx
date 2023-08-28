@@ -22,8 +22,8 @@ export default function SignUpPage({}: Props) {
   };
 
   return (
-    <div className="bg-slate-300 px-20 py-10 h-screen">
-      <div className="rounded-2xl bg-primary-white px-10 py-5 h-full">
+    <div className="bg-slate-300 md:px-20 md:py-10 p-5 h-screen">
+      <div className="rounded-2xl bg-primary-white p-3 md:x-10 md:py-5 h-full">
         {/* Logo / Nav */}
         <div className="mb-10 flex items-center justify-between">
           <h3 className="text-2xl text-center">Netherite</h3>
@@ -39,10 +39,10 @@ export default function SignUpPage({}: Props) {
           </Button>
         </div>
         {/* Title */}
-        <h1 className="text-5xl font-semibold text-center">
+        <h1 className="text-3xl lg:text-5xl font-semibold text-center">
           Greetings, fellow human.
         </h1>
-        <p className="text-center font-medium text-xl mt-4 text-gray-500">
+        <p className="text-center font-medium text-base md:text-xl mt-2 md:mt-4 text-gray-500">
           First, Let&apos;s create your account!
         </p>
 
@@ -51,13 +51,13 @@ export default function SignUpPage({}: Props) {
           <Input
             type="email"
             label="Email"
-            className="w-[300px]"
+            className="w-full md:w-[300px]"
             variant="faded"
           />
           <Input
             defaultValue={password}
             label="Password"
-            className="w-[300px]"
+            className="w-full md:w-[300px]"
             variant="faded"
             endContent={
               <button
@@ -81,7 +81,7 @@ export default function SignUpPage({}: Props) {
             type={isVisible ? "text" : "password"}
           />
           {/* Generate password */}
-          <div className="w-[300px] ">
+          <div className="w-full md:w-[300px]">
             <Link
               onClick={handleGeneratedPassword}
               color="primary"
@@ -91,11 +91,15 @@ export default function SignUpPage({}: Props) {
             </Link>
           </div>
           {/* Signup Options */}
-          <Button color="primary" variant="solid" className="w-[300px]">
+          <Button
+            color="primary"
+            variant="solid"
+            className="w-full md:w-[300px]"
+          >
             Signup
           </Button>
           <span className="text-gray-300">OR</span>
-          <Button variant="faded" className="w-[300px]">
+          <Button variant="faded" className="w-full md:w-[300px]">
             <PiGoogleLogo size={20} /> Signup with Google
           </Button>
           <div className="text-gray-500 text-sm">
