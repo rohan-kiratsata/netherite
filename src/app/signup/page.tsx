@@ -43,7 +43,7 @@ export default function SignUpPage({}: Props) {
           Greetings, fellow human.
         </h1>
         <p className="text-center font-medium text-xl mt-4 text-gray-500">
-          First, Let's create your account!
+          First, Let&apos;s create your account!
         </p>
 
         {/* Form */}
