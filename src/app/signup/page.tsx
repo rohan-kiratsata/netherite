@@ -115,7 +115,7 @@ export default function SignUpPage({}: Props) {
   );
 }
 
-export const GeneratePassword = () => {
+const GeneratePassword = () => {
   const lowercase = "abcdefghijklmnopqrstuvwxyz";
   const uppercase = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
   const numbers = "0123456789";
