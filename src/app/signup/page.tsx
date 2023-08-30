@@ -23,7 +23,7 @@ export default function SignUpPage({}: Props) {
 
   return (
     <div className="bg-slate-300 md:px-20 md:py-10 p-5 h-screen">
-      <div className="rounded-2xl bg-primary-white p-3 md:x-10 md:py-5 h-full">
+      <div className="rounded-2xl bg-primary-white p-3 md:px-10 md:py-5 h-full">
         {/* Logo / Nav */}
         <div className="mb-10 flex items-center justify-between">
           <h3 className="text-2xl text-center">Netherite</h3>
